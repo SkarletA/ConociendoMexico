@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Conociendo Mexico </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+
+    <section class="bienvenidos">
+      <h1 Id="saludo"></h1>
+    </section>
+  
+    <div class="container">
+      
+      <h1>1.-¿En que Estado de la Republica Mexicana se encuentra la playa de tulum?</h1>
+
+      <br> </br>
+      <img src="/Users/anton/OneDrive/Documentos/Skarlet Proyectos/javascript/ConociendoMexico/logos/logoplayatulum.jpg">
+      <br> </br>
+
+      <button type="submit" class="respuesta"  name="pregunta1" onclick = "respuesta1_1('Quintana Roo');"> Quintana Roo</button>
+      
+      <button  type="submit" class="respuesta" name="pregunta1" onclick = "respuesta1_1('Nayarit');"> Nayarit</button>
+      
+      <button  type="submit" class="respuesta" name="pregunta1" onclick = "respuesta1_1('Monterrey');"> Monterrey</button>
+      
+    </div>
+
+
+    <div class="container">
+      
+      <h1>2.-¿En que Estado de la Republica Mexicana  se encuentra la playa de Manzanillo?</h1>
+
+      <br> </br>
+      <img src="/Users/anton/OneDrive/Documentos/Skarlet Proyectos/javascript/ConociendoMexico/logos/logoplayamanzanillo.jpg">
+      <br> </br>
+
+      <button  type="submit"class="respuesta"  name="pregunta2" onclick = "respuesta1_2('Tamaulipas');">Tamaulipas</button>
+    
+      <button type="submit" class="respuesta"  name="pregunta2" onclick = "respuesta1_2('Colima');"> Colima</button>
+      
+      <button type="submit" class="respuesta"  name="pregunta2" onclick = "respuesta1_2('Baja California');"> Baja California</button>
+      
+    </div>
+    
+    <div class="container">
+      
+      <h1>3.-¿En que Estado de la Reublica Mexicana se encuentra la playa de Huatulco?</h1>
+      <br> </br>
+      <img src="/Users/anton/OneDrive/Documentos/Skarlet Proyectos/javascript/ConociendoMexico/logos/logoplayahuatulco.jpg">
+      <br> </br>
+      <button type="submit" class="respuesta"  name="pregunta3" onclick = "respuesta1_3('Michoacan');"> Michoacan</button>
+      
+      <button type="button" class="respuesta"  name="pregunta3" onclick = "respuesta1_3('Sonora');"> Sonora </button>
+     
+      <button type="button"  class="respuesta" name="pregunta3" onclick = "respuesta1_3('Oaxaca');"> Oaxaca</button>
+      
+    </div>
+ 
+    <br> </br>
+    <div class="botonResultado">
+      <button class="button_result" id="button_result" onclick="resultado();" >Calcular Resultado</button>
+    </div>
+    <br> </br>
+
+    <div class="botonRetornar">
+      <button type="submit" class="button_return" id="button_return" ><a href="index.html" >Jugar de nuevo</a></button>
+    </div>
+    <br> </br>
+
+
+    <script> 
+      let saludo = document.getElementById("saludo");
+
+      saludo.textContent = `Hola ${sessionStorage.getItem('keyName')}` + ' bienvenido(a) ¿Empecemos a jugar?';
+
+      let cont = 0
+
+      function respuesta1_1(estado){
+        if (estado === "Quintana Roo"){
+          alert("Wow! Respuesta Correcta, has constestado muy bien !!!")
+          cont++
+        }
+        else{
+          alert("Ups, Has fallado, Respuesta Incorrecta")
+        } 
+      }
+      function respuesta1_2(estado){
+        if (estado === "Colima"){
+          alert("Wow! Respuesta Correcta, has constestado muy bien !!!")
+          cont++
+        }
+        else{
+          alert("Ups, Has fallado, Respuesta Incorrecta")
+        } 
+      }
+
+      function respuesta1_3(estado){
+        if (estado === "Oaxaca"){
+          alert("Wow! Respuesta Correcta, has constestado muy bien !!!")
+          cont++
+        }
+        else{
+          alert("Ups, Has fallado, Respuesta Incorrecta")
+        } 
+      }
+      
+      function resultado(){
+        
+          alert(`Has acertado ${cont} / 3`)
+      }
+    </script>
+  </body>
+</html>

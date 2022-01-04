@@ -1,0 +1,98 @@
+html{
+  background :rgb(0,0,51 );
+}
+h1{
+  color:rgb(47, 153, 240);
+  text-align:center;
+  font-size: 50px;
+}
+
+.ingresar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:0px;
+  
+}
+
+.ingresar_1{
+  border: 3px solid black;
+  width:30%;
+  height: 30%;
+  padding:0px;
+  margin:5px;
+  justify-content: center;
+  font-size: 120%;
+}
+
+.botonPlaya{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botonBebidas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Name{
+  text-align: center;
+  font-size:24px;
+  border-width: 5px;
+  
+}
+.Name2{
+  text-align: center;
+  font-size:24px;
+  border-width: 5px;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  width:35%;
+  text-align:center;
+  
+}
+.respuesta{
+  background:pink;
+  width:30%;
+  padding: 10px;
+  margin:5px;
+  font-size: 16px;
+  border-width: 5px;
+  text-align:center;
+}
+.respuesta:hover{
+  background:  #346ff0;
+  cursor: pointer;
+  transform: scale(1.0);
+
+}
+.bienvenidos{
+  color: rgb(224, 75, 20);
+  font-size:200%;
+}
+
+.button_result{
+  border-width: 5px;
+  font-size:16px;
+}
+.botonResultado{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.botonRetornar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_return{
+  border-width: 5px;
+  font-size:16px;
+}
+a{
+  text-decoration:none;
+}
